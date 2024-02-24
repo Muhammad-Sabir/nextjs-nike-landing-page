@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <main className="relative">
       <Navbar />
-      <section className="wide:padding-r padding-b xl:p-1">
+      <section className="wide:padding-r padding-b xl:padding-l">
         <Hero />
       </section>
       <section className="padding">

@@ -29,7 +29,12 @@ export const navLinks = [
   { href: "#contact-us", label: "Contact Us" },
 ];
 
-export const shoes = [
+type ShoeType = {
+  thumbnail: any;
+  bigShoe: any;
+}[];
+
+export const shoes: ShoeType = [
   {
     thumbnail: thumbnailShoe1,
     bigShoe: bigShoe1,
