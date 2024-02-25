@@ -21,9 +21,13 @@ const Button = ({
   return (
     <button
       className={`centered-flex gap-2 rounded-full border  px-7 py-4 font-montserrat 
-    text-lg leading-none 
+    text-lg leading-none hover:shadow-md
     ${fullWidth && "w-full"}
-    ${backgroundColor ? `${backgroundColor} ${textColor} ${borderColor}` : "border-coral-red bg-coral-red text-white"}`}
+    ${
+      backgroundColor
+        ? `${backgroundColor} ${textColor} ${borderColor}`
+        : "border-coral-red bg-coral-red text-white"
+    }`}
     >
       {label}
 
