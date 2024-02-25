@@ -1,13 +1,26 @@
 import Image from "next/image";
 import React from "react";
 
-type buttonProps = { label: string; iconUrl?: string };
+type buttonProps = {
+  label: string;
+  iconUrl?: string;
+  backgroundColor?: string;
+  borderColor?: string;
+  textColor?: string;
+};
 
-const Button = ({ label, iconUrl }: buttonProps) => {
+const Button = ({
+  label,
+  iconUrl,
+  backgroundColor,
+  borderColor,
+  textColor,
+}: buttonProps) => {
   return (
     <button
-      className="flex items-center justify-center gap-2 rounded-full border border-coral-red bg-coral-red px-7 py-4 font-montserrat 
-    text-lg leading-none text-white"
+      className={`flex items-center justify-center gap-2 rounded-full border  px-7 py-4 font-montserrat 
+    text-lg leading-none 
+    ${backgroundColor ? `${backgroundColor} ${textColor} ${borderColor}` : "border-coral-red bg-coral-red text-white"}`}
     >
       {label}
 
