@@ -27,7 +27,7 @@ const SuperQuality = () => {
         </div>
       </div>
 
-      <div className="flex flex-1 items-center justify-center">
+      <div className="centered-flex flex-1">
         <Image
           src={shoe8}
           alt="Shoe 8"
