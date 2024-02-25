@@ -14,7 +14,7 @@ const PopularProductCard = ({
   price,
 }: PopularProductCardProps) => {
   return (
-    <div className="flex w-full flex-1 flex-col max-sm:w-full">
+    <div className="flex w-full flex-1 flex-col items-center sm:items-baseline">
       <Image src={imgURL} alt={name} width={280} height={280} />
 
       <div className="mt-8 flex justify-start gap-2.5">
