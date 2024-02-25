@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-type buttonProps = { label: string; iconUrl: string };
+type buttonProps = { label: string; iconUrl?: string };
 
 const Button = ({ label, iconUrl }: buttonProps) => {
   return (
@@ -10,13 +10,16 @@ const Button = ({ label, iconUrl }: buttonProps) => {
     text-lg leading-none text-white"
     >
       {label}
-      <Image
-        src={iconUrl}
-        alt="Button icon"
-        className="ml-2 rounded-full"
-        width={20}
-        height={20}
-      />
+
+      {iconUrl && (
+        <Image
+          src={iconUrl}
+          alt="Button icon"
+          className="ml-2 rounded-full"
+          width={20}
+          height={20}
+        />
+      )}
     </button>
   );
 };

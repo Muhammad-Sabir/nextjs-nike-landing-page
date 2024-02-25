@@ -18,7 +18,7 @@ const Navbar = () => {
             <li key={link.label}>
               <Link
                 href={link.href}
-                className="font-montserrat text-lg leading-normal text-slate-gray"
+                className="z-50 font-montserrat text-lg leading-normal text-slate-gray"
               >
                 {link.label}
               </Link>
